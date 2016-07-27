@@ -13,6 +13,11 @@ public class main {
           Numeros losnumeros = new Numeros();
           Radixsort radix = new Radixsort();
           
+          int [] ordenada = radix.sort(losnumeros.generarNumeros());
+          for (int i=0; i<10;i++){
+              System.out.println(ordenada[i]);
+          }
+          
       }
     
 }

@@ -1,6 +1,4 @@
 
-import java.util.Scanner;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -12,8 +10,9 @@ import java.util.Scanner;
  * codigo tomado de http://www.sanfoundry.com/java-program-implement-radix-sort/;
  */
 public class Radixsort {
-public void sort( int[] a)
+public int[] sort(int[] a)
     {
+        
         int i, m = a[0], exp = 1, n = a.length;
         int[] b = new int[10];
         for (i = 1; i < n; i++)
@@ -33,5 +32,6 @@ public void sort( int[] a)
                 a[i] = b[i];
             exp *= 10;        
         }
+        return a;
     }       
 }

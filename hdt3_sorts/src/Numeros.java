@@ -15,7 +15,7 @@ public class Numeros {
         
 public int[] generarNumeros(){
         int losnumeros[] = new int[3000];
-        for (int i=0; i<=3000; i++)
+        for (int i=0; i<=2999; i++)
         {      
             Random rnd = new Random();
             losnumeros[i] = (int) (rnd.nextDouble() * 100);
