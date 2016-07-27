@@ -13,7 +13,7 @@ import java.util.Random;
 public class Numeros {
     
         
-public static int[] generarNumeros(){
+public int[] generarNumeros(){
         int losnumeros[] = new int[3000];
         for (int i=0; i<=3000; i++)
         {      
