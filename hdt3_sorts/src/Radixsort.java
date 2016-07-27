@@ -9,10 +9,10 @@ import java.util.Scanner;
 
 /**
  *
- * @author Rodrigo Arriaza;
+ * codigo tomado de http://www.sanfoundry.com/java-program-implement-radix-sort/;
  */
 public class Radixsort {
-public static void sort( int[] a)
+public void sort( int[] a)
     {
         int i, m = a[0], exp = 1, n = a.length;
         int[] b = new int[10];
@@ -33,7 +33,5 @@ public static void sort( int[] a)
                 a[i] = b[i];
             exp *= 10;        
         }
-    }    
-    /** Main method **/
-   
+    }       
 }
