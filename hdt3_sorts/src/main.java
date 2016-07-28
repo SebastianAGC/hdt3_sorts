@@ -12,8 +12,12 @@ public class main {
       public static void main(String args[]) {
           Numeros losnumeros = new Numeros();
           Radixsort radix = new Radixsort();
-          
+          int [] numeros1 = losnumeros.generarNumeros();
           int [] ordenada = radix.sort(losnumeros.generarNumeros());
+          for (int i=0; i<10;i++){
+              System.out.println(numeros1[i]);
+          }
+          System.out.println("Ordenado: \n");
           for (int i=0; i<10;i++){
               System.out.println(ordenada[i]);
           }

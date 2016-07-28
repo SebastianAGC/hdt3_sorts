@@ -15,10 +15,11 @@ public class Numeros {
         
 public int[] generarNumeros(){
         int losnumeros[] = new int[3000];
-        for (int i=0; i<=2999; i++)
+        int n = losnumeros.length;
+        for (int i=0; i<n; i++)
         {      
             Random rnd = new Random();
-            losnumeros[i] = (int) (rnd.nextDouble() * 100);
+            losnumeros[i] = (int) (rnd.nextDouble() * n);
         }
     return losnumeros;
     } 
