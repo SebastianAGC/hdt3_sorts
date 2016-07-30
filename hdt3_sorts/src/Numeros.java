@@ -8,13 +8,12 @@
  *
  * @author Rodrigo Arriaza;
  */
-import java.util.ArrayList;
 import java.util.Random;
 public class Numeros {
     
         
 public int[] generarNumeros(){
-        int losnumeros[] = new int[3000];
+        int losnumeros[] = new int[10];
         int n = losnumeros.length;
         for (int i=0; i<n; i++)
         {      
