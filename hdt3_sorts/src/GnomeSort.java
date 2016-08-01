@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Rodrigo Arriaza;
+ * @author ;
  */
 public class GnomeSort {
     public static Comparable[] gnomeSort(Comparable[] nums){ //takes unsorted array, returns sorted

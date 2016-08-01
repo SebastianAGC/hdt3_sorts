@@ -1,6 +1,6 @@
 /**
  *
- * @author Rodrigo Arriaza;
+ * @author ;
  */
 import java.util.Random;
 
