@@ -13,13 +13,14 @@ public class main {
           //Clases para los sorts
           Radixsort radix = new Radixsort();
           Merge merge = new Merge();
+          GnomeSort elgnomo = new GnomeSort();
           
           //Se llena el array con numeros random
           for (int i = 0; i < len; i++)
               num[i] = random.nextInt(len*100);
                     
           //Sort con QuickSort
-          QuickSort.sort(num, 0, num.length-1);
+          GnomeSort.gnomeSort(num);
           
           //Sort con RadixSort
           //num = radix.sort(num, len);
