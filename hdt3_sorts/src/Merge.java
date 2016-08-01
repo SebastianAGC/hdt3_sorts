@@ -9,16 +9,16 @@
  * @author tomado de http://www.java2novice.com/java-sorting-algorithms/merge-sort/;
  */
 public class Merge {
-    private int[] array;
-    private int[] tempMergArr;
+    private Comparable[] array;
+    private Comparable[] tempMergArr;
     private int length;
 
-    public int[] sort(int inputArr[]) {
-        this.array = inputArr;
-        this.length = inputArr.length;
-        this.tempMergArr = new int[length];
+    public Comparable[] sort(Comparable inputArr[]) {
+        array = inputArr;
+        length = inputArr.length;
+        tempMergArr = new Comparable[length];
         doMergeSort(0, length - 1);
-        return inputArr;
+        return array;
     }
  
     private void doMergeSort(int lowerIndex, int higherIndex) {
@@ -43,7 +43,7 @@ public class Merge {
         int j = middle + 1;
         int k = lowerIndex;
         while (i <= middle && j <= higherIndex) {
-            if (tempMergArr[i] <= tempMergArr[j]) {
+            if (tempMergArr[i].compareTo(tempMergArr[j]) <= 0) {
                 array[k] = tempMergArr[i];
                 i++;
             } else {
