@@ -42,13 +42,13 @@ public class MergeTest {
     @Test
     public void testSort() {
         System.out.println("sort");
-        Comparable[] inputArr = null;
+        Comparable[] inputArr = {5,1,3,4};
         Merge instance = new Merge();
-        Comparable[] expResult = null;
+        Comparable[] expResult = {1,3,4,5};
         Comparable[] result = instance.sort(inputArr);
         assertArrayEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
