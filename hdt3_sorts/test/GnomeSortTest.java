@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ *Pruebas unitarias para la clase del sort Gnome
  */
 
 import org.junit.After;
@@ -42,12 +40,12 @@ public class GnomeSortTest {
     @Test
     public void testGnomeSort() {
         System.out.println("gnomeSort");
-        Comparable[] nums = null;
-        Comparable[] expResult = null;
-        Comparable[] result = GnomeSort.gnomeSort(nums);
+        Comparable[] inputArr = {5,1,3,4};
+        Comparable[] expResult = {1,3,4,5};
+        Comparable[] result = GnomeSort.gnomeSort(inputArr);
         assertArrayEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }

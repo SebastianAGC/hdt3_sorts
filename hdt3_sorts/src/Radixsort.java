@@ -1,8 +1,7 @@
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/* Universidad del Valle de Guatmala
+ * Algoritmos y Estructuras de Datos
+ *
+ * En esta clase se realiza el Sort con el método Radix
  */
 
 /**

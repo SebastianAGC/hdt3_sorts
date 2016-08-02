@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ *Pruebas unitarias para la clase del sort Radix
  */
 
 import org.junit.After;
@@ -42,13 +40,13 @@ public class RadixsortTest {
     @Test
     public void testSort() {
         System.out.println("sort");
-        Comparable[] a = null;
+        Comparable[] a = {5,1,3,4};
         Radixsort instance = new Radixsort();
-        Comparable[] expResult = null;
+        Comparable[] expResult = {1,3,4,5};
         Comparable[] result = instance.sort(a);
         assertArrayEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }

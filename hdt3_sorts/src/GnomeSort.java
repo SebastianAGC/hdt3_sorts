@@ -1,12 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/* Universidad del Valle de Guatmala
+ * Algoritmos y Estructuras de Datos
+ *
+ * En esta clase se realiza el Sort con el método Gnome
  */
 
 /**
  *
- * @author ;
+ * @author referencia tomada de: https://rosettacode.org/wiki/Sorting_algorithms/Gnome_sort#Java;
  */
 public class GnomeSort {
     public static Comparable[] gnomeSort(Comparable[] nums){ //takes unsorted array, returns sorted

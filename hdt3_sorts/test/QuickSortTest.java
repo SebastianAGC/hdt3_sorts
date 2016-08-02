@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ *Pruebas unitarias para la clase del sort Quick
  */
 
 import org.junit.After;
@@ -42,12 +40,12 @@ public class QuickSortTest {
     @Test
     public void testSort() {
         System.out.println("sort");
-        Comparable[] list = null;
+        Comparable[] list = {5,1,3,4};
         int low = 0;
-        int high = 0;
+        int high = 3;
         QuickSort.sort(list, low, high);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -56,14 +54,14 @@ public class QuickSortTest {
     @Test
     public void testPartition() {
         System.out.println("partition");
-        Comparable[] list = null;
+        Comparable[] list = {5,1,3,4};
         int low = 0;
-        int high = 0;
-        int expResult = 0;
+        int high = 3;
+        int expResult = 2;
         int result = QuickSort.partition(list, low, high);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
